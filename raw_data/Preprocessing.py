@@ -15,9 +15,9 @@ count=1
 for i in range(1,720,12): 
     t1 = i * 1000 #Works in milliseconds 
     t2 = (i+12) * 1000 
-    newAudio = AudioSegment.from_wav( "C:/Users/work_computer/Desktop/NTNU/wu.wav" ) 
+    newAudio = AudioSegment.from_wav( "C:/Users/work_computer/Desktop/Voiceprint_Recognition/wu.wav" ) 
     newAudio = newAudio[t1:t2] 
-    newAudio.export( "C:/Users/work_computer/Desktop/NTNU/wu/" +str(count)+ '.wav' , format= "wav" ) #Exports to a wav file in the current path. 
+    newAudio.export( "C:/Users/work_computer/Desktop/Voiceprint_Recognition/wu/" +str(count)+ '.wav' , format= "wav" ) #Exports to a wav file in the current path. 
     print(count) 
     count+=1 
 
@@ -28,11 +28,11 @@ import matplotlib.pyplot as plt
 from os import walk 
 
 baichuan_wavs = [] 
-for (_,_,filenames) in walk( "C:/Users/work_computer/Desktop/NTNU/machine_learning/shiyer_test_all/" ): 
+for (_,_,filenames) in walk( "C:/Users/work_computer/Desktop/Voiceprint_Recognition/machine_learning/shiyer_test_all/" ): 
     baichuan_wavs.extend(filenames) 
     break 
 for baichuan_wav in baichuan_wavs:  
-    input_data = read("C:/Users/work_computer/Desktop/NTNU/machine_learning/shiyer_test_all/" + baichuan_wav)
+    input_data = read("C:/Users/work_computer/Desktop/Voiceprint_Recognition/machine_learning/shiyer_test_all/" + baichuan_wav)
     audio = input_data[1] 
     # plot the first 1024 samples 
     plt.plot(audio) 
@@ -42,7 +42,7 @@ for baichuan_wav in baichuan_wavs:
     # set the title 
     # plt.title("Sample Wav") 
     # display the plot 
-    plt.savefig( "C:/Users/work_computer/Desktop/NTNU/machine_learning/shiyerplot/" + baichuan_wav.split( '.' )[0] + '.png' ) 
+    plt.savefig( "C:/Users/work_computer/Desktop/Voiceprint_Recognition/machine_learning/shiyerplot/" + baichuan_wav.split( '.' )[0] + '.png' ) 
     # plt.show() 
     plt.close( 'all' ) 
 
@@ -55,7 +55,7 @@ import librosa.display
 import matplotlib.pyplot as plt
 import numpy as np 
 
-path="C:/Users/work_computer/Desktop/NTNU/"
+path="C:/Users/work_computer/Desktop/Voiceprint_Recognition/"
 
 count =0
 #提取MFCC特征

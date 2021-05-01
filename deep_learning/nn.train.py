@@ -28,7 +28,7 @@ import pickle
 import cv2
 import os
 
-path="C:/Users/work_computer/Desktop/NTNU/deep_learning/"
+path="C:/Users/work_computer/Desktop/Voiceprint_Recognition/deep_learning/"
 image_width = 64
 
 # load data

@@ -15,7 +15,7 @@ import cv2
 import os
 import numpy as np
 
-path="C:/Users/work_computer/Desktop/NTNU/deep_learning/"
+path="C:/Users/work_computer/Desktop/Voiceprint_Recognition/deep_learning/"
 image_width = 64
 
 # ===========================load testing data===========================

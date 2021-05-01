@@ -20,7 +20,7 @@ from sklearn.metrics import confusion_matrix
 from sklearn.metrics import classification_report
 import numpy as np 
 
-path="C:/Users/work_computer/Desktop/NTNU/machine_learning/"
+path="C:/Users/work_computer/Desktop/Voiceprint_Recognition/machine_learning/"
 
 #extract the MFCC features
 def get_features(song): 
