@@ -6,11 +6,11 @@ We collect the voice from 5 people, who are "baichuan", "shiyer", "zhou", "wu", 
 
 In ./machine_learning and ./deep_learnig, you could train and test the model seperatly. The workflow is illustrated as the following picture.
 
-![avatar](http://baidu.com/pic/doge.png)
+![avatar](https://github.com/whubaichuan/Voiceprint_Recognition/blob/main/image/flow.png)
 
 ### Feature extraction
 There are many features can be extracted and fed into the method of machine learning such as Log-Mel, MFCC, D-vector (By Google), the spectrum diagram and time-frequency diagram. We choose the MFCC feature based on the auditory characteristics of human.
-![avatar](http://baidu.com/pic/doge.png)
+![avatar](https://github.com/whubaichuan/Voiceprint_Recognition/blob/main/image/features.png)
 
 ### Machine Learning
 There are many methods of machine learning such as GMM, HMM, SVM. We here use SVM dur to that SVM perform well in solving small sample nonlinear classification.  
@@ -50,7 +50,7 @@ By abundant experiments, we find that the accuracy, f1-score and the confusion m
 | confusion matrix | [15,0,0<br>0,15,0,<br>0,,15] |            -           | [19,0,0<br>0,13,0,<br>0,0,13] |          -          |
 
 A visulization of training process of deep learning:
-![avatar](http://baidu.com/pic/doge.png)
+![avatar](https://github.com/whubaichuan/Voiceprint_Recognition/blob/main/image/cnn_plot.png)
 
 ### Results
 1. We could see that the accuracy of (c) is higher that (a) and (b) not only in machine learing but also in deep learning. Does that mean that the near people and the gender will effect the model?
