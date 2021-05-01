@@ -65,5 +65,4 @@ It has been pointed out that:
 
 
 ### Acknowledge
-For more details about the technologies and trendency of voiceprint recognition, please refer to [here](https://zhuanlan.zhihu.com/p/67563275.
-)
+For more details about the technologies and trendency of voiceprint recognition, please refer to [here](https://zhuanlan.zhihu.com/p/67563275)
